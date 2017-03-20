@@ -1,0 +1,100 @@
+{
+	"questions":{
+		"big" 								: 	"Biggest Country ?",
+	    "small" 							: 	"Smallest Country ?",
+	    "high" 								: 	"Higest Peak ?",
+	    "long" 								: 	"Longest River ?",
+	    "total" 							: 	"Total no.of Countries ?",
+	    "area" 								: 	"Area in Square.km ?",
+	    "rank" 								: 	"Largest Rank ?",
+	    "land"								:	"Percentage of world's land ?",
+	    "tour" 								: 	"Tourist Place ?",
+	    "river" 							: 	"Total no.of Major Rivers ?",
+	    "mountain" 							: 	"Important Mountain ?",
+	    "lake" 								: 	"Largest Lake ?",
+	    "language" 							: 	"Important Language ?"
+	},
+	"answers" : {
+			"Asia":{
+		      
+		       "big"						:   "China",
+		       "small"						:   "Maldives",
+		       "high"						:	"Mt.Everest",
+		       "long"						:	"Yangtze",
+		       "total"		   	 			:	"48",
+		       "area"						:	"44.58 million km²",
+		       "rank"						:	"One",
+		       "land"	        			:	"29.6%",
+		       "tour"						:	"Bali",
+		       "river"						:	"33",
+		       "mountain"					:	"Himalaya",
+		       "lake"						:	"Aral Sea",
+		       "language"					:	"French"
+			},
+
+			"Africa":{
+		      
+		       "big"						:   "Sudan",
+		       "small"						:   "Seychelles",
+		       "high"						:	"Mt.Kilimanjaro",
+		       "long"						:	"Nile",
+		       "total"						:	"54",
+		       "area"						:	"30.29 million km²",
+		       "rank"						:	"Two",
+		       "land"						:	"20.2%",
+		       "tour"						:	"Zanzibzr",
+		       "river"						:	"20",
+		       "mountain"					:	"Mt.Kenya",
+		       "lake"						:	"Victoria",
+		       "language"					:	"Arabic"
+			},
+			"America":{
+		      
+		       "big"						:   "Brazil",
+		       "small"						:   "Suriname",
+		       "high"						:	"Mt.Aconcagua",
+		       "long"						:	"Amazon",
+		       "total"						:	"12",
+		       "area"						:	"17.84 million km²",
+		       "rank"						:	"Three",
+		       "land"						:	"11.9%",
+		       "tour"						:	"Iguazu Falls",
+		       "river"						:	"88",
+		       "mountain"					:	"Mt.Andes",
+		       "lake"						:	"Titicaca",
+		       "language"					:	"Spanish"
+			},
+			"Europe":{
+		      
+		       "big"						:   "Russia",
+		       "small"						:   "Vatican City",
+		       "high"						:	"Mt.Elbrus",
+		       "long"						:	"Volga",
+		       "total"						:	"50",
+		       "area"						:	"10.24 million km²",
+		       "rank"						:	"Four",
+		       "land"						:	"6.7%",
+		       "tour"						:	"Paris",
+		       "river"						:	"5",
+		       "mountain"					:	"Mt.Alps",
+		       "lake"						:	"Caspian",
+		       "language"					:	"French"
+			},
+			"Australia":{
+		      
+		       "big"						:   "Australia",
+		       "small"						:   "Nauru",
+		       "high"						:	"Mt.Coscuisco",
+		       "long"						:	"Darling",
+		       "total"						:	"1",
+		       "area"						:	"8.9 million km²",
+		       "rank"						:	"Last",
+		       "land"						:	"6.0%",
+		       "tour"						:	"Sydney Opera House",
+		       "river"						:	"5",
+		       "mountain"					:	"Mt.Kosciuszko",
+		       "lake"						:	"Eyre",
+		       "language"					:	"Greek"
+			}
+		}
+}	

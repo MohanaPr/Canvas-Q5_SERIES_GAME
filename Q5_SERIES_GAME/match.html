@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Series Game</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/match.css">
+</head>
+<body>
+	<!--play area container-->
+	<section class="area_wrapper">
+		<!--for hints-->
+		<section class="top">
+			<div class="hint_back">
+				<p class="hint">Drag and drop the suitable options from the Answers</p>
+			</div>
+			<p class="user_hint">Hi <span id="userName"></span>,You are in <span id="contientName">  </span> Continent.</p>
+		</section>
+		<!--match area part-->
+		<section class="match_area">
+			<section class="play_area">
+				<article class="play">
+					<!--for animation-->
+					<section class="spin"></section>
+					<!--for timer part-->
+					<section class="time_wrapper">
+							<section class="time">
+								<h2>Time Count</h2>
+								<div id="timing"></div>
+								<!---->
+								<div class="star">		
+									<img src="assets/images/star_gray.png" alt="star" class="initialstar">
+									<img src="assets/images/star_gray.png" alt="star" class="initialstar">
+									<img src="assets/images/star_gray.png" alt="star" class="initialstar">
+									<img src="assets/images/star_gray.png" alt="star" class="initialstar">
+									<img src="assets/images/star_gray.png" alt="star" class="initialstar">
+								</div>
+							</section>
+						</section>
+				</article>
+			</section>
+			<aside class="choice_wrapper">
+				<div class="checklist">
+					<img src="assets/images/checklist_bg.png">
+					<h3>Answers</h3>
+				</div>
+				<ul>
+					<li class="row">
+						<div id="option_a" class="drag" draggable="true" ondragstart="drag(event)">a</div>
+						<p class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_b" class="drag" draggable="true" ondragstart="drag(event)" >b</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_c" class="drag"  draggable="true" ondragstart="drag(event)" >c</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_d" class="drag"  draggable="true" ondragstart="drag(event)" >d</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_e" class="drag"  draggable="true" ondragstart="drag(event)" >e</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_f" class="drag"  draggable="true" ondragstart="drag(event)" >f</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_g" class="drag"  draggable="true" ondragstart="drag(event)" >g</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_h" class="drag"  draggable="true" ondragstart="drag(event)" >h</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_i" class="drag"  draggable="true" ondragstart="drag(event)" >i</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_j" class="drag"  draggable="true" ondragstart="drag(event)" >j</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_k" class="drag"  draggable="true" ondragstart="drag(event)" >k</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_l" class="drag"  draggable="true" ondragstart="drag(event)" >l</div>
+						<p  class="dragAnswer"></p>
+					</li>
+					<li class="row">
+						<div id="option_m" class="drag" draggable="true" ondragstart="drag(event)" >m</div>
+						<p class="dragAnswer"></p>
+					</li>
+				</ul>
+			</aside>
+			<canvas id="canvas" width="200" height="200">
+						
+			</canvas>
+		</section>
+		<nav class="navigation">
+			<div class="home"><a href="home.html"><img src="assets/images/home.png"></a></div>
+			<div class="map"><a href="map.html"><img src="assets/images/map.png"></a></div>
+			<div class="clear"></div>
+		</nav>
+
+	</section>
+	<!--popup layer html-->
+	<section id="layer"></section>
+	<!--game over popup-->
+	<section id="popup">
+		<p class="popup_caption">GAME OVER!!!</p>
+		<p class="popup_hint">PLEASE CLICK HOME TO RESTART THE GAME</p>
+		<button id="restart">OK</button>
+	</section>
+	<!--level completed popup-->
+	<section id="success_popup">
+		<p class="popup_caption">LEVEL COMPLETED!!!</p>
+		<p class="popup_hint">PLEASE CLICK MAP TO CONTINUE THE GAME</p>
+		<button id="ok">OK</button>
+	</section>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/match.js"></script>
+</body>
+</html>

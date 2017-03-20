@@ -1,0 +1,116 @@
+/*container styles*/
+.map_container {
+	width:1200px;
+	height:920px;
+	margin: 0 auto;
+	position: relative;
+    font-size: 20px;
+	z-index: 2;
+    font-family: Tahoma;
+}
+/*canvas*/
+#canvas {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+}
+.ship{
+	position: absolute;
+}
+.manual{
+    position: absolute;
+    margin: 0 15px;
+    text-align: center;
+    padding: 15px;
+    font-size:35px;
+    color: white;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 2px black, 0 0 25px #343469, 0 0 5px #042b12;    
+    font-weight: bold;
+}
+/*continents name*/
+.continent {
+    background: white;
+    padding: 15px;
+    text-align: center;
+    position: absolute;
+    border-radius: 20px;
+}
+.continent:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+#africa { top:400px; left:550px; }
+#europe { top:70px; left:420px; }
+#asia { top:300px;	 right:30px; }
+#america { bottom:300px; left:200px; }
+#australia { top:200px;	left:10px; }
+/*home icon*/
+.redirect{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	padding: 10px;
+	border-radius: 60px;
+	margin: 5px;
+	background: rgba(255,255,255,0.2);
+}
+/*popup layer*/
+#layer {
+	width:100%;
+	height:920px;
+	position: absolute;
+	top:0px;
+    display:none;
+    z-index: 4;
+    background: rgba(0,0,0,0.5);
+}
+/*pop up to next page*/
+#map_popup {
+    display: none;
+    width: 600px;
+    height: 380px;
+    border: 3px solid rgba(36, 125, 158, 0.81);
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    text-align: center;
+    z-index: 5;
+    background-image: rgba(255,65,141,0.5),rgba(0,0,0,0);
+    background-image: -webkit-linear-gradient(bottom right,rgba(255,65,141,0.5), rgba(255,65,141,0.1), rgba(255,65,141,0)),-webkit-radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url('../assets/images/play_background.png');
+    background-image: -o-linear-gradient(left top, rgba(255,65,141,0.5), rgba(255,65,141,0.1), rgba(255,65,141,0)),-o-radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url('../assets/images/play_background.png'); 
+    background-image: -moz-linear-gradient(left top, rgba(255,65,141,0.5), rgba(255,65,141,0.1), rgba(255,65,141,0)),-moz-radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url('../assets/images/play_background.png'); 
+    background-image: linear-gradient( to left top, rgba(255,65,141,0.5), rgba(255,65,141,0.1), rgba(255,65,141,0)),radial-gradient(circle, rgba(0,0,0,0), rgba(0,0,0,0.1), rgba(0,0,0,0.2)),url('../assets/images/play_background.png');
+    box-shadow: inset 0px 25px 114px -45px #A391C1;
+    background-size: 100% 100%;
+}
+button {
+    font-weight: bold;
+    width: 80px;
+    padding: 5px;
+    background: -webkit-linear-gradient(top, #3ea81e, #6a7f6a);
+    margin-top: 30px;
+    border-radius: 7px;
+}
+.popup_caption {
+	font-size: 39px;
+    font-style: italic;
+    text-shadow: 0 0 20px rgba(19, 192, 115, 0.92), 0 0 0px #097a31;
+    font-weight: bold;
+    padding: 40px 0px;
+    margin: 40px 0px 30px 0px;
+}
+.popup_hint {
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 30px 0;
+    margin-top: 30px;
+}

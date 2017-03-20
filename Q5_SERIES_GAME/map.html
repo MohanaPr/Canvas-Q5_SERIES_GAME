@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Series Game</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/map.css">
+</head>
+<body>
+  <!--map container starts here-->
+  <section class="map_container">
+    <!--canvas part-->
+    <canvas id="canvas" width="1200" height="920"></canvas>
+    <!--ship initial position-->
+    <article class="ship">
+    	<img src="assets/images/boat.png" alt="ship" class="map_ship">
+    </article>
+    <!--hint for users-->
+    <p class="manual">Visit all continents by landing the boat on the land</p>
+    <!--continenets name-->
+    <article class="continent" id="africa"><h1 class="country">Africa</h1></article>
+    <article class="continent" id="europe"><h1 class="country">Europe</h1></article>
+    <article class="continent" id="asia"><h1 class="country">Asia</h1></article>
+    <article class="continent" id="america"><h1 class="country">America</h1></article>
+    <article class="continent" id="australia"><h1 class="country">Australia</h1></article>
+    <!--home icon-->
+    <article class="redirect"><a href="home.html"><img src="assets/images/home.png"></a></article>
+  </section>
+  <!--layer for popup-->
+  <section id="layer"></section>
+  <!--popup block for next page-->
+  <section id="map_popup">
+    <p class="popup_caption">Reached Island successfully!!!</p>
+    <p class="popup_hint">Please CLICK HERE to play the Quiz</p>
+    <button id="go">Go to Quiz</button>
+  </section>
+  <!--scripts file-->
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/map.js"></script>
+</body>
+</html>

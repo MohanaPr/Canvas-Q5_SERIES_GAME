@@ -1,0 +1,58 @@
+<!-- SeriesGame Homepage_Html    -->     
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Series Game</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/home.css">
+</head>
+<body>
+<!--  HomePage Container Starts-->
+    <section class="homeContainer">
+		<section class="homeBackround">
+		    <!--  Home Circle -->
+		    <article class="homeCircle">  
+		     	<img class="boatMan" src="assets/images/boatMan.png" alt="boatman">	
+		    </article>
+		    <!--   Home Backround Music -->
+		    <article class="music">
+		    	<a href="#"><img  id="backroundMusic" src="assets/images/music.png" alt="music"></a><p>BACKGROUND MUSIC</p>      
+		    </article>
+	        <!-- Home Name -->
+		    <article>
+		        <label class="enter">ENTER YOUR NAME :</label>
+			    <input class="ename" id="playerName" type="text" name="name">
+			    <img class="line" src="assets/images/line.png" alt="line">
+		    </article>
+            <!-- HomeWrapper Starts -->
+		    <section class="wrapper">
+		        <!--  NewGame -->
+			    <article class="newGame">
+			    	<a id="new" ><img  src="assets/images/newgame.png" alt="newGame" ></a><P>NEW GAME</P>
+			    </article>
+                <!-- Score -->
+			    <article class="score" >
+			    	<a href="javascript:void(0)"><img src="assets/images/score.png" alt="score"></a><P>SCORE MORE</P>
+			    </article>
+                <!-- Help -->
+			    <article class="help">
+			    	<a href="javascript:void(0)"><img  src="assets/images/help.png" alt="help"></a><P>HELP</P>
+			    </article>
+		    </section>
+	    </section>
+	    <!--For invalid data-->
+	    <section class="pointing">
+	    	<span>Please enter your name</span>
+	    </section>
+	    <!--username invalid data-->
+	     <section class="invalid">
+	    	<span>Please enter valid name</span>
+	    </section>
+    </section>
+    
+  <!--  HomePage Container End-->
+  <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="js/home.js"></script>
+</body>
+</html>
